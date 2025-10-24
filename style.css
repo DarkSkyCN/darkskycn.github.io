@@ -8,14 +8,13 @@ html, body {
     line-height: 1.75; /* Set line height for better readability */
     background-color: white; /* Light grey background for the body */
     color: #333; /* Dark grey text color */
-    height: 100%; /* Ensure the body takes up the full height of the viewport */
+    min-height: 100vh; /* Ensure the body takes up the full height of the viewport */
 }
 
 /* General Page Styling */
 body {
     display: flex;
     flex-direction: column; /* Use flexbox to structure the layout */
-    height: 100dvh; /* Ensure the page takes up the full viewport height */
 }
 
 h1, h2, h3 {
@@ -24,9 +23,14 @@ h1, h2, h3 {
 
 /* Header Styles */
 header {
+    position: sticky; /* Sticky positioning */
+    top: 0; /* Align to the top */
+    left: 0;
+    right: 0;
     text-align: center;
     padding: 0.1em;
     background-color: #7f3f98; /* DarkSky Royal Purple */
+    z-index: 100; /* Ensures it stays on top of other content */
     color: white;
 }
 .logo-container {
@@ -54,26 +58,21 @@ main {
 
 /* About */
 .about {
+    width: 88dvw; /* Set a fixed width for the resume section */
+    max-width: 888px; /* Set a maximum width for larger screens */
     display: flex;
     justify-content: center; /* Center the about section */
     align-items: center; /* Center vertically */
-    margin: 1em 0; /* Add margin for spacing */
-    gap: 0.5em; /* Add space between image and text */
-    flex-direction: row; /* Align items in a row */
+    text-align: left; /* Align text to the left */
+    margin: 1em auto 1em; /* Add margin for spacing */
+    padding: 0; /* Remove default padding */
+    flex-direction: column; /* Align items in a column */
     flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
 }
 .about-image {
     width: auto; /* Allow the logo to scale */
     height: 50px; /* Set a fixed height for the logo */
-}
-.about-text {
-    display: flex;
-    justify-content: center; /* Center the about section */
-    align-items: center; /* Center vertically */
-    text-align: left; /* Align text to the left */
-    padding: 0 1.6em; /* Add padding to paragraphs for better spacing */
-    flex-direction: column; /* Align items in a column */
-    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+    margin: 0.5em auto 1em; /* Add margin for spacing */
 }
 .about-link {
     text-decoration: none; /* Remove underline from links */
@@ -114,8 +113,8 @@ main {
     background-color: #f2eefa; /* Light purple background */
     margin: 4em auto; /* Center the contact section */
     padding: 1em; /* Add padding for spacing */
-    width: 80dvw; /* Set a fixed width for the contact section */
-    max-width: 800px; /* Set a maximum width for larger screens */
+    width: 60dvw; /* Set a fixed width for the contact section */
+    max-width: 780px; /* Set a maximum width for larger screens */
     border-radius: 5px; /* Rounded corners */
     box-shadow: 2px 3px 9px #eee5ff; /* Shadow effect */
 }
