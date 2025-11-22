@@ -56,6 +56,22 @@ main {
 }
 
 
+
+/* Update Section */
+.update-container {
+    width: 88dvw; /* Set a fixed width for the update section */
+    max-width: 888px; /* Set a maximum width for larger screens */
+    display: flex;
+    justify-content: center; /* Center the update section */
+    align-items: center; /* Center vertically */
+    text-align: left; /* Align text to the left */
+    margin: 0 auto 3em; /* Center the update section */
+    padding: 0; /* Remove default padding */
+    flex-direction: column; /* Align items in a column */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+}
+
+
 /* About */
 .about {
     width: 88dvw; /* Set a fixed width for the resume section */

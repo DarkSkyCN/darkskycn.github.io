@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生态环境法典（草案） - 光污染相关条文 Ecology and Environment Code (Draft) - Light Pollution</title>
+    <style>
+        /* global */
+        body {
+            font-family: "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 9px;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 100%;
+            max-width: 1234px;
+            background: #fff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            padding: 9px;
+            border-radius: 10px;
+        }
+
+        /* Header */
+        .doc-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            border-bottom: 3px solid #eee;
+        }
+        
+        .doc-title-cn {
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 6px;
+        }
+
+        .doc-title-en {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #555;
+            line-height: 1.4;
+            margin-bottom: 6px;
+        }
+
+        .doc-notes {
+            font-size: 0.9rem;
+            color: #888;
+            margin-top: 5px;
+            margin-bottom: 14px;
+            line-height: 1.4;
+        }
+
+        .translator-header {
+            text-align: center;
+            color: #999;
+            font-size: 0.9rem;
+            border-top: 1px solid #eee;
+            padding-top: 14px;
+        }
+
+        /* Table Layout */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed; /* Lock column width ratio */
+        }
+
+        /* Column Width Definition */
+        col.col-cn { width: 49.5%; }
+        col.col-gap { width: auto; }
+        col.col-en { width: 49.5%; }
+
+        td {
+            padding: 10px 9px;
+            vertical-align: top;
+            word-wrap: break-word;
+        }
+
+        /* --- Hierarchical Style Design --- */
+
+        /* Level 1: 法典名称 (Code Name) */
+        .level-1 {
+            background-color: #2c3e50;
+            color: #fff;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-align: center;
+            padding: 9px;
+            border-radius: 6px 6px 0 0; /* Only top corners rounded */
+        }
+
+        /* Level 2: 编 (Book) - Major Section */
+        .level-2 {
+            background-color: #e3e8ee; /* Light gray-blue */
+            color: #000;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+            padding: 8px;
+            border-top: 2px solid #fff;
+            border-bottom: 1px solid #ccc;
+        }
+
+        /* Level 3: 分编 (Part) */
+        .level-3 {
+            background-color: #f0f3f5;
+            color: #444;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-align: center;
+            padding: 7px;
+            border-top: 1px solid #ddd;
+        }
+
+        /* Level 4: 章 (Chapter) */
+        .level-4 {
+            background-color: #fffcf0; /* Very light yellow, distinguish hierarchy */
+            color: #555;
+            font-size: 1.05rem;
+            font-weight: bold;
+            text-align: center;
+            padding: 6px;
+            border-bottom: 1px dashed #ddd;
+        }
+
+        /* Level 5: 节 (Section) */
+        .level-5 {
+            font-style: italic;
+            color: #666;
+            font-weight: bold;
+            text-align: center;
+            padding: 5px;
+            background-color: #fff;
+            border-bottom: 1px solid #eee;
+        }
+
+        /* Level 6: 正文条目 (Articles) */
+        .article-row td {
+            border-bottom: 1px solid #eee;
+            padding-top: 14px;
+            padding-bottom: 14px;
+        }
+
+        .article-row:hover {
+            background-color: #fafafa;
+        }
+
+        /* Style Details */
+        .article-num {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 6px;
+            color: #000;
+        }
+
+        .highlight {
+            color: #d93025; /* Red highlight */
+            font-weight: bold;
+        }
+
+        .translator-footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #999;
+            font-size: 0.9rem;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="doc-header">
+        <div class="doc-title-cn">生态环境法典 污染防治编 + 法律责任和附则编（草案二次审议稿）中关于光污染的条文</div>
+        <div class="doc-title-en">
+            Lighting pollution related articles in the <i>Ecology and Environment Code</i><br>
+            Book of Pollution Prevention and Control + Book of Legal Liability and Supplementary Provisions<br><i>(Second Deliberation Draft)</i>
+        </div>
+        <div class="doc-notes">
+            <br>
+            注：本翻译仅供参考，不作为法律依据。如有疑义，请以中文原文为准。<br>
+            Note: This translation is for reference only and does not constitute legal basis. In case of any doubt, please refer to the original Chinese text.<br>
+            <br>
+            原文PDF下载&nbsp;|&nbsp;Original PDF download :<br>
+            <a href="http://www.npc.gov.cn/flcaw/flca/ff80818199e72c4f019a1ffcb608592c/attachment.pdf" target="_blank" rel="noopener">污染防治编（草案二次审议稿）</a><br>
+            <a href="http://www.npc.gov.cn/flcaw/flca/ff80818199e72aa4019a1fdf699b61dc/attachment.pdf" target="_blank" rel="noopener">法律责任和附则编（草案二次审议稿）</a><br>
+            <br>
+            2025年11月26日之前公开征求意见<br>
+            Public Comment until Nov 26, 2025<br>
+            <a href="http://www.npc.gov.cn/flcaw/userIndex.html?lid=ff80818199e72c4f019a1ffcb608592c" target="_blank" rel="noopener">污染防治编（草案二次审议稿）</a><br>
+            <a href="http://www.npc.gov.cn/flcaw/userIndex.html?lid=ff80818199e72aa4019a1fdf699b61dc" target="_blank" rel="noopener">法律责任和附则编（草案二次审议稿）</a>
+        </div>
+        <div class="translator-header">
+            Translated by &copy; Ruoyu Li&nbsp;|&nbsp;Nov 2025
+            <br>
+            <a href="https://r-li.com" target="_blank" rel="noopener">r-li.com</a>&nbsp;|&nbsp;<a href="https://darksky.cn" target="_blank" rel="noopener">darksky.cn</a>
+        </div>
+    </div>
+
+    <table>
+        <colgroup>
+            <col class="col-cn">
+            <col class="col-gap">
+            <col class="col-en">
+        </colgroup>
+
+        <tbody>
+            <tr>
+                <td colspan="3" class="level-1">
+                    生态环境法典<br>
+                    <span style="font-size: 1rem; font-weight: normal; opacity: 0.9;">Ecology and Environment Code</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3" class="level-2">
+                    污染防治编（草案二次审议稿）<br>
+                    <span style="font-size: 0.9em; font-weight: normal;">Book of Pollution Prevention and Control (Second Deliberation Draft)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3" class="level-3">
+                    第一分编 通则<br>
+                    <span style="font-size: 0.9em; font-weight: normal;">Part One &nbsp; General Provisions</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3" class="level-4">
+                    第一章 一般规定<br>
+                    <span style="font-size: 0.9em; font-weight: normal;">Chapter I &nbsp; General Rules</span>
+                </td>
+            </tr>
+
+            <tr class="article-row">
+                <td>
+                    <span class="article-num">第一百四十六条</span>
+                    排放污染物的单位和个人，应当采取有效措施，防治在生产、生活或者其他活动中产生的大气污染、水污染、海洋污染、土壤污染、固体废物污染、噪声污染、放射性污染、化学物质污染、电磁辐射污染、<span class="highlight">光污染</span>等环境污染。
+                </td>
+                <td></td>
+                <td>
+                    <span class="article-num">Article 146</span>
+                    Entities and individuals discharging pollutants shall take effective measures to prevent and control environmental pollution generated from production, daily life, or other activities, including air pollution, water pollution, marine pollution, soil pollution, solid-waste pollution, noise pollution, radioactive pollution, chemical-substance pollution, electromagnetic-radiation pollution, and <span class="highlight">light pollution</span>.
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3" class="level-3">
+                    第九分编 化学物质、电磁辐射、<span class="highlight">光污染</span>防治<br>
+                    <span style="font-size: 0.9em; font-weight: normal;">Part Nine &nbsp; Prevention and Control of Chemical Substances, Electromagnetic Radiation, and <span class="highlight">Light Pollution</span></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3" class="level-4">
+                    第三十六章 <span class="highlight">光污染防治</span><br>
+                    <span style="font-size: 0.9em; font-weight: normal;">Chapter XXXVI &nbsp; <span class="highlight">Light Pollution Prevention and Control</span></span>
+                </td>
+            </tr>
+
+            <tr class="article-row">
+                <td>
+                    <span class="article-num">第六百六十条</span>
+                    本法所称光污染，是指过量或者不恰当使用人工照明、改变自然光源，干扰周围生活环境的现象。
+                </td>
+                <td></td>
+                <td>
+                    <span class="article-num">Article 660</span>
+                    For the purposes of this Law, “light pollution” refers to the phenomenon in which excessive or improper use of artificial lighting, or alteration of natural light sources, interferes with the surrounding living environment.
+                </td>
+            </tr>
+
+            <tr class="article-row">
+                <td>
+                    <span class="article-num">第六百六十一条</span>
+                    国家保护满足公众健康需求的良好光环境。全社会增强光污染防治意识，积极开展光污染防治活动，共同维护良好光环境。
+                </td>
+                <td></td>
+                <td>
+                    <span class="article-num">Article 661</span>
+                    The state shall protect a good lighting environment that meets public health needs. All of society shall raise awareness of light pollution prevention and control, and actively carry out light pollution prevention and control activities, to jointly maintain a good lighting environment.
+                </td>
+            </tr>
+
+            <tr class="article-row">
+                <td>
+                    <span class="article-num">第六百六十二条</span>
+                    国务院生态环境主管部门对全国光污染防治工作实施统一监督管理。地方人民政府生态环境主管部门对本行政区域光污染防治工作实施统一监督管理。<br><br>
+                    住房城乡建设、交通运输等有关部门，在各自职责范围内对光污染防治工作实施监督管理。
+                </td>
+                <td></td>
+                <td>
+                    <span class="article-num">Article 662</span>
+                    The competent department for ecology and environment under the State Council shall exercise unified nationwide supervision and administration over light pollution prevention and control. The competent departments for ecology and environment of local people's governments shall exercise unified supervision and administration over light pollution prevention and control within their respective administrative regions.<br><br>
+                    The departments for housing and urban-rural development, transport, and other relevant departments shall supervise and administer light pollution prevention and control within their respective scopes of responsibilities.
+                </td>
+            </tr>
+
+            <tr class="article-row">
+                <td>
+                    <span class="article-num">第六百六十三条</span>
+                    各级人民政府及其有关部门制定、修改国土空间规划和相关规划，应当充分考虑城乡区域开发、改造和建设项目可能产生的光污染影响，统筹规划，合理安排土地用途和建设布局，防止、减轻光污染。
+                </td>
+                <td></td>
+                <td>
+                    <span class="article-num">Article 663</span>
+                    When formulating or revising territorial spatial plans and related plans, people’s governments at all levels and their relevant departments shall fully consider the potential light pollution impacts of urban and rural regional development, renewal, and construction projects, make overall plans, and rationally allocate land uses and construction layouts to prevent and mitigate light pollution.
+                </td>
+            </tr>
+
+            <tr class="article-row">
+                <td>
+                    <span class="article-num">第六百六十四条</span>
+                    国务院标准化主管部门会同国务院住房城乡建设、生态环境、交通运输等有关部门根据光污染防治要求和国家经济、技术条件，对照明产品、户外显示产品、交通补光灯、建筑玻璃和材料等在其技术规范或者产品质量标准中规定合理的光强、亮度、上射光通比、色温、反射比等光限值。
+                </td>
+                <td></td>
+                <td>
+                    <span class="article-num">Article 664</span>
+                    The competent department for standardization under the State Council, in conjunction with the competent departments for housing and urban-rural development, ecology and environment, transport, and other relevant departments under the State Council, shall—based on light pollution prevention and control requirements and the nation’s economic and technological conditions—stipulate rational light limits for luminous intensity, luminance, upward light ratio, color temperature, reflectance, and the like in the technical specifications or product quality standards for lighting products, outdoor display products, traffic supplemental lights, building glass and materials, and the like.
+                </td>
+            </tr>
+
+            <tr class="article-row">
+                <td>
+                    <span class="article-num">第六百六十五条</span>
+                    国务院生态环境主管部门会同有关部门开展光污染监测方法研究，推进光污染监测工作。
+                </td>
+                <td></td>
+                <td>
+                    <span class="article-num">Article 665</span>
+                    The competent department for ecology and environment under the State Council, in conjunction with relevant departments, shall conduct research on light pollution monitoring methods and advance light pollution monitoring.
+                </td>
+            </tr>
+
+            <tr class="article-row">
+                <td>
+                    <span class="article-num">第六百六十六条</span>
+                    广告屏、广告牌、灯箱、媒体立面墙、道路、体育场、施工场地等，应当按照国家有关规定合理设计、安装、使用照明设施，定期保养维护，采取有效措施，防止、减轻光污染。
+                </td>
+                <td></td>
+                <td>
+                    <span class="article-num">Article 666</span>
+                    Advertising screens, advertising boards, light boxes, media facade walls, roads, sports venues, construction sites, and the like, shall, in accordance with relevant state regulations, design, install, and use light fixtures rationally, maintain regularly, and take effective measures to prevent and mitigate light pollution.
+                </td>
+            </tr>
+
+            <tr class="article-row">
+                <td>
+                    <span class="article-num">第六百六十七条</span>
+                    建筑物、构筑物外表面采用玻璃幕墙等建筑材料，应当符合国家有关规定，合理设计和选材，控制高反光率材料的使用，防止、减轻光污染。
+                </td>
+                <td></td>
+                <td>
+                    <span class="article-num">Article 667</span>
+                    When using glass curtain walls and other building materials on the exterior surfaces of buildings and structures, such use shall comply with relevant state regulations, and the design and materials selection shall be rational, with the use of high-reflectance materials controlled to prevent and mitigate light pollution.
+                </td>
+            </tr>
+
+            <tr class="article-row">
+                <td>
+                    <span class="article-num">第六百六十八条</span>
+                    县级以上地方人民政府应当根据实际情况，实行光污染防治分区管理，加强对需要特殊保护区域人工照明以及自然光源改变的控制。
+                </td>
+                <td></td>
+                <td>
+                    <span class="article-num">Article 668</span>
+                    Local people's governments at or above the county level shall, based on actual circumstances, implement zoned management for light pollution prevention and control, and strengthen control over artificial lighting and alterations of natural light sources in areas requiring special protection.
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3" class="level-2">
+                    法律责任和附则编（草案二次审议稿）<br>
+                    <span style="font-size: 0.9em; font-weight: normal;">Book of Legal Liability and Supplementary Provisions (Second Deliberation Draft)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3" class="level-4">
+                    第二章 法律责任分则<br>
+                    <span style="font-size: 0.9em; font-weight: normal;">Chapter II &nbsp; Legal Liability - Specific Provisions</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3" class="level-5">
+                    第十节 化学物质、电磁辐射、<span class="highlight">光污染</span><br>
+                    <span style="font-weight: normal;">Section 10: Chemical Substances, Electromagnetic Radiation, and <span class="highlight">Light Pollution</span></span>
+                </td>
+            </tr>
+
+            <tr class="article-row">
+                <td>
+                    <span class="article-num">第一千一百七十四条之一</span>
+                    违反本法规定，广告屏、广告牌、灯箱、媒体立面墙、道路、体育场、施工场地等,未采取有效措施防止、减轻光污染，干扰他人正常生活、交通出行的,由住房城乡建设、生态环境、交通运输等主管部门按照职责分工责令改正，拒不改正的，处五千元以上五万元以下的罚款。
+                </td>
+                <td></td>
+                <td>
+                    <span class="article-num">Article 1174-1</span>
+                    In violation of the provisions of this Law, advertising screens, advertising boards, light boxes, media facade walls, roads, sports venues, construction sites, and the like, fail to take effective measures to prevent and mitigate light pollution, thereby interfering with the normal life and transportation of others, shall be ordered to make corrections by the competent departments for housing and urban-rural development, ecology and environment, transport, and others departments in accordance with the division of responsibilities; if corrections are refused, a fine of not less than 5,000 yuan but not more than 50,000 yuan shall be imposed.
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <div class="translator-footer">
+        Translated by &copy; Ruoyu Li&nbsp;|&nbsp;Nov 2025
+        <br>
+        <a href="https://r-li.com" target="_blank" rel="noopener">r-li.com</a>&nbsp;|&nbsp;<a href="https://darksky.cn" target="_blank" rel="noopener">darksky.cn</a>
+    </div>
+
+</div>
+
+</body>
+</html>
